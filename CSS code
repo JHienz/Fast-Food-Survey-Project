@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+  }
+
+#survey-form {
+  width:900px;
+  margin: 0 auto;
+}
+
+.row-tab {
+  display:block;
+}
+.label-fastfood{
+  display:inline-block;
+  width: 40%;
+  text-align:left;
+  }
+
+.input-fastfood{
+  display: inline-block;
+  text-align:left;
+  width 48%
+}
