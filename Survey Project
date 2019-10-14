@@ -1,20 +1,53 @@
-<h1> Fast Food Survey </h1>
+<html>
+<h1 id="title"> Fast Food Survey </h1>
+<p id="description"> What is your favorite fast food restaurant?</p> 
+<form id="survey-form">
+  <div class="rowTab">
+    <div class="labels">
+      <label id="name-label" for="name">*Name:</label>
+  </div>
+<div class="rightTab">
+  <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Type your name here" required>
+    </div>
+  </div>
+  <div class="rowTab">
+    <div class="labels">
+      <label id="email-label" for="email"> *Email:</label>
+  </div>
+<div class="rightTab">
+  <input type="email" name="email" id="email" class="input-field" placeholder="Type your email here" required>
+    </div>
+  </div>
+  <div class="rowTab">
+    <div class="labels">
+      <label id="number-label" for="age"> *Age:</label>
+  </div>
+<div class="rightTab">
+  <input type="number" name="age" id="number" min="1" max="100" class="dropdown" placeholder="Age" required>
+    </div>
+  </div>
+  <div class="rowTab">
+    <div class="labels">
+      <label id="numberofRIA" for="numberofRIA"> How many fast food restaurants are in your area? </label>
+    </div>
+    <div class="rightTab">
+      <input id="numberofRIA" type="number" name="numberofRIA" min="1" max="100" class="dropdown" placeholder="Restaurants">
+    </div>
+  </div>
+  <div class="rowTab">
+    <div class="labels">
+      <label for="localrestaurants"> Which restaurant is in your area? (Circle all that apply):</label>
+    </div>
+  <div class="rightTab">
+    <ul  id="localrestaurants" style="list-style: none;">
+         <li class="radio"><label>Taco Bell<input name="radio-buttons" value="1"  type="radio" class="localrestaurants" ></label></li>
+          <li class="radio"><label>McDonald's<input name="radio-buttons" value="2"  type="radio" class="localrestaurants" ></label></li>
+      <li class="radio"><label> Five Guys<input name="radio-buttons" value="3"  type="radio" class="localrestaurants"> </label></li>
+      <li class="radio"><label> Subway<input name="radio-buttons" value="4" type="radio" class="localrestaurants"> </label></li>
+      <li class="radio"><label> Hardees<input name="radio-buttons"
+value="5" type="radio" radio="localrestaurants"></label></li>
+      <li class="radio"><label> Popeyes<input name="radio-buttons" value="6" type="radio" class="localrestaurants"> </label> </li> 
+      <li class="radio"><label> Burger King <input name="radio-buttons" value="7" type="radio" class="localrestaurants"> </label></li>
+      <li class="radio"><label> KFC <input name="radio-buttons" value="8" type="radio" class="localrestaurants"> </label></li>
+          </form>
 
-<form id='survey-form'>
-  <div class="row-tab">
-    <div class="label-fastfood">
-      <label>Name:</label>
-  </div>
-<div class="input-fastfood">
-  <input type="text">
-    </div>
-  </div>
-  <div class="row-tab">
-    <div class="label-fastfood">
-      <label> Last Name:</label>
-  </div>
-<div class="input-fastfood">
-  <input type="text">
-    </div>
-  </div>
-</form>
