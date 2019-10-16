@@ -1,23 +1,68 @@
+html,  
 body {
   text-align: center;
+  background-color: grey;
+  font-family:sans-serif;
+  min-width:320px;
   }
+header {
+  display:inline-block;
+  font-size:2em;
+  margin: 20px;
+}
 
 #survey-form {
+  background-color: gainsboro;
   width:900px;
   margin: 0 auto;
+  border-radius: 10px;
+  width:75%;
+  max-width: 900px;
+  padding:10px;
+  padding-top: 20px;
 }
 
-.row-tab {
-  display:block;
-}
-.label-fastfood{
-  display:inline-block;
-  width: 40%;
-  text-align:left;
-  }
-
-.input-fastfood{
+.labels {
   display: inline-block;
+  text-align: left;
+  width: 40%;
+  padding: 8px;
+  vertical-align:top;
+  margin-top: 10px;
+  margin:8px;
+}
+.rowTab{
+  display:block;
+  margin: 4px;
+  padding:6px;
+}
+.rightTab{
+  display:inline-block;
+  text-align: left;
+  height: 20%;
+  width: 48%;
+  vertical-align:middle;
+  border-radius: 8px;
+  border: 1px;
+}
+.input-field{
+  display:inline-block;
   text-align:left;
-  width 48%
+  height: 0 auto;
+  width: 75%;
+  padding: 2px;
+  margin-top: 1em;
+  border: 2px transparent grey;
+  border-radius: 8px;
+  }
+#number{
+  margin-top: 1em;
+  border: 2px transparent grey;
+  border-radius: 8px;
+}
+#numberofRIA {
+  width: 48%;
+  border: 2px transparent grey;
+  border-radius: 8px;
+  margin-top: 1em;
 }
