@@ -1,4 +1,9 @@
-<html>
+<!Doctype html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width", initial-scale=1>
+   </head>
 <h1 id="title"> Fast Food Survey </h1>
 <p id="description"> What is your favorite fast food restaurant?</p> 
 <form id="survey-form">
@@ -33,21 +38,27 @@
     <div class="rightTab">
       <input id="numberofRIA" type="number" name="numberofRIA" min="1" max="100" class="dropdown" placeholder="Restaurants">
     </div>
-  </div>
   <div class="rowTab">
     <div class="labels">
       <label for="localrestaurants"> Which restaurant is in your area? (Circle all that apply):</label>
     </div>
+  </div>
   <div class="rightTab">
     <ul  id="localrestaurants" style="list-style: none;">
-         <li class="radio"><label>Taco Bell<input name="radio-buttons" value="1"  type="radio" class="localrestaurants" ></label></li>
-          <li class="radio"><label>McDonald's<input name="radio-buttons" value="2"  type="radio" class="localrestaurants" ></label></li>
-      <li class="radio"><label> Five Guys<input name="radio-buttons" value="3"  type="radio" class="localrestaurants"> </label></li>
-      <li class="radio"><label> Subway<input name="radio-buttons" value="4" type="radio" class="localrestaurants"> </label></li>
-      <li class="radio"><label> Hardees<input name="radio-buttons"
-value="5" type="radio" radio="localrestaurants"></label></li>
-      <li class="radio"><label> Popeyes<input name="radio-buttons" value="6" type="radio" class="localrestaurants"> </label> </li> 
-      <li class="radio"><label> Burger King <input name="radio-buttons" value="7" type="radio" class="localrestaurants"> </label></li>
-      <li class="radio"><label> KFC <input name="radio-buttons" value="8" type="radio" class="localrestaurants"> </label></li>
+         <label class="box-inline">Taco Bell<input name="checkbox" value="taco-bell"  type="checkbox"></label>
+          <label class="box-inline">McDonald's<input name="checkbox" value="McDonald's"  type="checkbox"></label>
+     <label class="box-inline"> Five Guys<input name="checkbox" value="five-guys"  type="checkbox">  </label>
+      <label class="box-inline"> Subway<input name="checkbox" value="subway" type="checkbox">
+ </label>
+      <label class="box-inline"> Hardees<input name="checkbox" value="hardees" type="checkbox"></label>
+      <label class="box-inline"> Popeyes<input name="checkbox" value="popeyes" type="checkbox"></label> 
+<label class="box-inline"> Burger King <input name="checkbox" value="burger-king" type="checkbox"> </label>
+      <label class="box-inline"> KFC <input name="checkbox" value="kfc" type="checkbox"> 
+       </label>
+      <label class="box-inline"> Dairy Queen <input name="checkbox" value="dairyQueen" type="checkbox"></label>
+        <label class="box-inline"> Wendy's <input name"checkbox" value="wendy's" type="checkbox"> </labels> 
+    </ul>
+    </div>
+  </div>
+    
           </form>
-
