@@ -12,7 +12,7 @@
       <label id="name-label" for="name">*Name:</label>
   </div>
 <div class="rightTab">
-  <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Type your name here" required>
+  <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Type your name here" required><br>
     </div>
   </div>
   <div class="rowTab">
@@ -20,7 +20,7 @@
       <label id="email-label" for="email"> *Email:</label>
   </div>
 <div class="rightTab">
-  <input type="email" name="email" id="email" class="input-field" placeholder="Type your email here" required>
+  <input type="email" name="email" id="email" class="input-field" placeholder="Type your email here" required><br>
     </div>
   </div>
   <div class="rowTab">
@@ -28,37 +28,163 @@
       <label id="number-label" for="age"> *Age:</label>
   </div>
 <div class="rightTab">
-  <input type="number" name="age" id="number" min="1" max="100" class="dropdown" placeholder="Age" required>
+  <input type="number" name="age" id="number" min="1" max="100" placeholder="Age" required><br>
     </div>
   </div>
   <div class="rowTab">
     <div class="labels">
-      <label id="numberofRIA" for="numberofRIA"> How many fast food restaurants are in your area? </label>
+      <label for="numberofRIA"> How many fast food restaurants are in your area? </label>
     </div>
     <div class="rightTab">
-      <input id="numberofRIA" type="number" name="numberofRIA" min="1" max="100" class="dropdown" placeholder="Restaurants">
+      <input id="numberofRIA" type="number" name="numberofRIA" min="1" max="100" placeholder="Restaurants"><br>
     </div>
+  </div>
   <div class="rowTab">
     <div class="labels">
-      <label for="localrestaurants"> Which restaurant is in your area? (Circle all that apply):</label>
+      <label for="localrest"> Which restaurants are in your area? (Check all that apply):</label>
     </div>
-  </div>
   <div class="rightTab">
-    <ul  id="localrestaurants" style="list-style: none;">
-         <label class="box-inline">Taco Bell<input name="checkbox" value="taco-bell"  type="checkbox"></label>
-          <label class="box-inline">McDonald's<input name="checkbox" value="McDonald's"  type="checkbox"></label>
-     <label class="box-inline"> Five Guys<input name="checkbox" value="five-guys"  type="checkbox">  </label>
-      <label class="box-inline"> Subway<input name="checkbox" value="subway" type="checkbox">
- </label>
-      <label class="box-inline"> Hardees<input name="checkbox" value="hardees" type="checkbox"></label>
-      <label class="box-inline"> Popeyes<input name="checkbox" value="popeyes" type="checkbox"></label> 
-<label class="box-inline"> Burger King <input name="checkbox" value="burger-king" type="checkbox"> </label>
-      <label class="box-inline"> KFC <input name="checkbox" value="kfc" type="checkbox"> 
-       </label>
-      <label class="box-inline"> Dairy Queen <input name="checkbox" value="dairyQueen" type="checkbox"></label>
-        <label class="box-inline"> Wendy's <input name"checkbox" value="wendy's" type="checkbox"> </labels> 
-    </ul>
+        <label for="tacobell"><input class="left-checkbox"  name="checkbox" value="tacobell" type="checkbox"></label>Taco Bell
+          <label for="mcdonalds"><input class="checkbox1" name="checkbox" value="mcDonalds" type="checkbox">McDonald's
+      </label><br>
+     <label for="fiveguys"><input class="left-checkbox" name="checkbox" value="fiveguys" type="checkbox">Five Guys 
+      </label>
+      <label for="subway"><input class="checkbox2" name="checkbox" value="subway" type="checkbox">Subway
+ </label><br>
+      <label for="hardees"><input class="left-checkbox" name="checkbox" value="hardees" type="checkbox">Hardees
+      </label>
+      <label for="popeyes"><input class="checkbox3" name="checkbox" value="popeyes" type="checkbox">Popeyes
+      </label><br> 
+<label for="burgerking"><input class="left-checkbox" name="checkbox" value="burgerking" type="checkbox">Burger King 
+      </label>
+      <label for="kfc"><input class="checkbox4" name="checkbox" value="kfc" type="checkbox">KFC 
+       </label><br>
+      <label for="dairyqueen"><input class="left-checkbox" name="checkbox" value="dairyQueen" type="checkbox">Dairy Queen
+      </label>
+        <label for="wendys"><input class="checkbox5" name="checkbox" value="wendys" type="checkbox">Wendy's 
+       </labels><br> 
+      <label for="arbys"> <input class="left-checkbox" name="checkbox" value="arbys" type="checkbox">Arby's
+        </labels>
+    <label for="llj"><input class="checkbox6" name="checkbox" value="llj" type="checkbox">Long John Silvers
     </div>
-  </div>
-    
-          </form>
+    <div class="rowtab">
+      <div class="labels">
+        <label for="time"> What time of day do you enjoy eating fast food?</label>
+      </div>
+        <div class="rightTab">
+        <br>
+        <input id="time1" type="radio" name="time-buttons" value="morning">Morning
+        <input id="time2" type="radio" name="time-buttons" value="afternoon">Afternoon 
+        <input id="time3" type="radio" name="time-buttons" value="anytime">Anytime<br>
+        <input id="time4" type="radio" name="time-buttons" value="night">Night
+        <input id="time5" type="radio" name="time-buttons" value="evening">Evening
+        <input id="time6" type="radio" name="time-buttons" value="notatall">None at all
+          </div>
+        </div>
+    <div class="rowTab">
+      <div class="labels">
+       <label for="rank">What are your top (5) favorite restaurants?</labels>
+    </div>
+  <div class="rightTab">
+      <ol>
+   <li><select id="dropdown" for="restaurants">
+  <option value="sao"> --Select an option-- </option>
+  <option value="tacobell"> Taco Bell </option>
+  <option value="Mcdonalds"> Mcdonald's</option>
+  <option value="fiveguys"> Five Guys</option>
+  <option value="subway"> Subway</option>
+  <option value="popeyes"> Popeyes</option>
+  <option value="burgerking"> Burger King </option>
+  <option value="kfc"> kfc </option>
+  <option value="dairyqueen"> Dairy Queen </option>
+  <option value="wendys"> Wendy's </option>
+  <option value="arbys"> Arby's </option>
+  <option value="llj"> Long John Silvers </option>
+    </select>
+    </li>
+   <li><select id="dropdown" for="restaurants">
+  <option value="sao"> --Select an option-- </option>
+  <option value="tacobell"> Taco Bell </option>
+  <option value="Mcdonalds"> Mcdonald's</option>
+  <option value="fiveguys"> Five Guys</option>
+  <option value="subway"> Subway</option>
+  <option value="popeyes"> Popeyes</option>
+  <option value="burgerking"> Burger King </option>
+  <option value="kfc"> kfc </option>
+  <option value="dairyqueen"> Dairy Queen </option>
+  <option value="wendys"> Wendy's </option>
+  <option value="arbys"> Arby's </option>
+  <option value="llj"> Long John Silvers </option>
+      </select>
+     </li>
+      <li><select id="dropdown" for="restaurants">
+   <option value="sao"> --Select an option-- </option>
+  <option value="tacobell"> Taco Bell </option>
+  <option value="Mcdonalds"> Mcdonald's</option>
+  <option value="fiveguys"> Five Guys</option>
+  <option value="subway"> Subway</option>
+  <option value="popeyes"> Popeyes</option>
+  <option value="burgerking"> Burger King </option>
+  <option value="kfc"> kfc </option>
+  <option value="dairyqueen"> Dairy Queen </option>
+  <option value="wendys"> Wendy's </option>
+  <option value="arbys"> Arby's </option>
+  <option value="llj"> Long John Silvers </option>
+       </select>
+      </li>
+        <li><select id="dropdown" for="restaurants">
+   <option value="sao"> --Select an option-- </option>
+  <option value="tacobell"> Taco Bell </option>
+  <option value="Mcdonalds"> Mcdonald's</option>
+  <option value="fiveguys"> Five Guys</option>
+  <option value="subway"> Subway</option>
+  <option value="popeyes"> Popeyes</option>
+  <option value="burgerking"> Burger King </option>
+  <option value="kfc"> kfc </option>
+  <option value="dairyqueen"> Dairy Queen </option>
+  <option value="wendys"> Wendy's </option>
+  <option value="arbys"> Arby's </option>
+  <option value="llj"> Long John Silvers </option>
+       </select>
+      </li>
+       <li><select id="dropdown" for="restaurants">
+   <option value="sao"> --Select an option-- </option>
+  <option value="tacobell"> Taco Bell </option>
+  <option value="Mcdonalds"> Mcdonald's</option>
+  <option value="fiveguys"> Five Guys</option>
+  <option value="subway"> Subway</option>
+  <option value="popeyes"> Popeyes</option>
+  <option value="burgerking"> Burger King </option>
+  <option value="kfc"> kfc </option>
+  <option value="dairyqueen"> Dairy Queen </option>
+  <option value="wendys"> Wendy's </option>
+  <option value="arbys"> Arby's </option>
+  <option value="llj"> Long John Silvers </option>
+       </select>
+      </li> 
+    </ol>
+   </div>
+   </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="likability"> Did you enjoy this survey?</label>
+      </div>
+        <div class="rightTab">
+                  <ul style="list-style: none;">
+          <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="userRatings">Yes</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="userRatings">Maybe</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="userRatings">No</label></li>
+        </ul>
+      </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="comment-label" for="comments"> For additional comments and questions?<br></label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" name="comment" placeholder="Type your comment here..."></textarea>
+      </div>
+    </div>
+    </div>
+     <button id="submit" type="submit" >Submit</button>
+    </div>
+  </form>
